@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skibidi Toilet Clicker</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f7f7f7;
+        }
+
+        #game-container {
+            display: inline-block;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 20px;
+        }
+
+        button img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+        }
+
+        #clicks {
+            font-weight: bold;
+            color: #2d9cdb;
+        }
+    </style>
 </head>
 <body>
     <div id="game-container">
         <h1>Skibidi Toilet Clicker</h1>
         <p>Clicks: <span id="clicks">0</span></p>
-        <button id="click-button">
-            <img src="https://via.placeholder.com/150?text=Skibidi+Toilet" alt="Skibidi Toilet" />
+        <button onclick="document.getElementById('clicks').innerText = parseInt(document.getElementById('clicks').innerText) + 1;">
+            <img src="https://via.placeholder.com/150?text=Skibidi+Toilet" alt="Skibidi Toilet">
         </button>
-        <p>Click the Skibidi Toilet to score points!</p>
+        <p>Click the Skibidi Toilet to score points! By:yonas abinet</p>
     </div>
-    
-    <script src="script.js"></script>
 </body>
 </html>
+
